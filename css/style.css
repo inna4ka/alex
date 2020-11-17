@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+header
+{
+    width: 100%;
+    height: 100vh;
+
+    background: 
+        linear-gradient(60deg, 
+        rgba(133, 113, 127, 0.95) 0%, 
+        rgba(0, 132, 155, 0.95) 35%,
+        rgba(0, 132, 155, 0.95) 65%, 
+        rgba(133, 113, 127, 0.95) 100%),
+        url(../img/background.svg);
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+
+    padding-top: 90px;
+
+    color: rgb(255, 255, 255);
+}
+nav
+{
+    width: 80%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+}
+.logo-block img
+{
+    width: 250px;
+    height: 55px;
+    
+    object-fit: fill;
+}
+.menu-block
+{
+    font-size: 32px;
+}
+.project-block
+{
+    width: 850px;
+    height: auto;
+
+    margin: 260px auto;
+}
+.project-block h1
+{
+    
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 400;
+
+    color: rgb(236, 240, 242);
+}
+.project-block p
+{
+    width: 800px;
+    margin: 40px auto;
+
+    font-size: 20px;
+    text-align: center;
+    font-family: "Open Sans";
+
+    color: rgba(254, 254, 254, 0.6);
+}
+.project-block p span
+{
+    color: rgba(254, 254, 254, 0.8);
+    font-weight: bold;
+}
+.header-button-container
+{
+    width: 300px;
+    margin: 52px auto;
+}
+.header-button
+{
+    border: 2px solid rgb(254, 254, 254);
+    border-radius: 25px;
+
+    padding: 15px 55px;
+
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+.header-button:hover
+{
+    color: rgb(255, 43, 74);
+    border: 2px solid rgb(255, 43, 74);
+
+    transition: 0.3s;
+}
+.header-button:active
+{
+    color: rgb(200, 43, 74);
+    border: 2px solid rgb(200, 43, 74);
+    transition: 0.3s;
+}
+.block
+{
+    width: 100%;
+    height: auto;
+
+    background: rgb(255, 255, 255);
+
+    padding-top: 120px;
+}
+.content-block
+{
+    width: 80%;
+    height: auto;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+.about-content
+{
+    width: 600px;
+}
+.about-content h3,
+.about-content p,
+.about-content .button
+{
+    margin: 50px 0;
+}
+.about-content h3
+{
+    font-size: 18px;
+    font-weight: 700;
+}
+.about-content p
+{
+    font-size: 16px;
+    line-height: 25px;
+}
+.button
+{
+    width: 200px;
+    height: 45px;
+
+    background: rgb(255, 43, 74);
+    color: rgb(255, 255, 255);
+
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    position: relative;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+.button:before
+{
+    content: " ";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 0;
+    padding-top: 0;
+
+    border-radius: 100%;
+
+    background-color: rgba(236, 240, 241, 0.3);
+
+    transform: translate(-50%, -50%);
+}
+.button:active:before
+{
+    width: 120%;
+    padding-top: 120%;
+
+    transition: width 0.3s ease-out, padding-top 0.3s ease-out;
+}
+.button:hover
+{
+    background-color: rgb(200, 43, 74);
+    transition: 0.3s;
+}
+.card-block
+{
+    background: rgb(246, 246, 246);
+    text-align: center;
+}
+.card-block .content-block
+{
+    margin: 120px auto;
+}
+.card-block h2
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.card-block p
+{
+    font-size: 16px;
+    font-weight: 500;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+.card
+{
+    box-sizing: border-box;
+
+    width: 24%;
+    height: 270px;
+
+    padding-top: 5%;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+.card-content
+{
+    width: 20%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    margin: auto;
+}
+.card-content .fas
+{
+    font-size: 48px;
+}
+.card-block .card:nth-child(1)
+{
+    background-color: rgb(114, 221, 253)
+}
+.card-block .card:nth-child(2)
+{
+    background-color: rgb(131, 90, 235);
+}
+.card-block .card:nth-child(3)
+{
+    background-color: rgb(0, 36, 83);
+}
+.card-block .card:nth-child(4)
+{
+    background-color: rgb(255, 43, 74);
+}
+.card:hover
+{
+    transition: 0.3s;
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+}
+.gradient-block
+{
+    background: 
+        linear-gradient(60deg, 
+        rgba(133, 113, 127) 0%, 
+        rgb(1, 100, 117) 35%,
+        rgba(1, 100, 117) 65%, 
+        rgba(133, 113, 127) 100%);
+    padding-bottom: 120px;
+}
+.sideblock
+{
+    width: 48%;
+    height: auto;
+    background-image: 
+        linear-gradient(45deg, 
+        rgba(93, 35, 96, 0.4) 0%, 
+        rgba(158, 53, 105, 0.4) 50%, 
+        rgba(93, 35, 96, 0.4) 100%);
+    padding: 70px 0;
+}
+.content
+{
+    width: 80%;
+    margin: 0 auto;
+
+    color: rgb(255, 255, 255);
+}
+.content h2
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+
+    margin-bottom: 32px;
+
+    text-transform: uppercase;
+}
+.content h3
+{
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+.content .date
+{
+    font-size: 16px;
+    font-weight: 500;
+
+    margin-bottom: 16px;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+.content p
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+.content hr
+{
+    margin: 31px 0;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.card
+{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.card:nth-child(5)
+{
+    background-color: rgb(131, 90, 235);
+    width: 49.28%;
+}
+.card:nth-child(6)
+{
+    background-color: rgb(0, 36, 83);
+}
+.card:nth-child(7)
+{
+    background-color: rgb(255, 43, 74);
+}
+.comment
+{
+    padding-bottom: 120px;
+    background-color: rgb(100, 203, 192);;
+}
+.comment .fas
+{
+    color: rgba(0, 36, 83, 0.5);
+    font-size: 72px;
+
+    margin-bottom: 50px;
+}
+.comment .content-block
+{
+    display: flex;
+    flex-direction: column;
+}
+.comment p
+{
+    width: 27%;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+}
+.comment img
+{
+    width: 170px;
+    margin: 55px 0;
+}
+.comment h3
+{
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-bottom: 16px;
+
+    color: rgba(0, 0, 0, 0.7);
+}
+.sideblock form
+{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+.form-input
+{
+    margin: 26px 0;
+
+    padding: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    color: rgba(255, 255, 255, 0.8);
+
+    outline: none;
+
+    background: none;
+}
+.content form textarea
+{
+    resize: none;
+    height: 200px;
+    margin-bottom: 120px;
+}
+.form-input::placeholder
+{
+    color: rgba(255, 255, 255, 0.6);
+}
+.form-input:focus
+{
+    outline: 1px solid rgba(0, 255, 0, 0.6);
+}
+form .button
+{
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+}
+.sideblocks
+{
+    width: 49%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sideblocks .sideblock
+{
+    width: 100%;
+}
+footer
+{
+    width: 100%;
+    height: 172px;
+
+    background-color: #222222;
+
+    box-sizing: border-box;
+
+    padding-top: 62px;
+}
+footer ul
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(170, 170, 170);
+    list-style-type: none;
+    margin: 0 auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+}
+footer ul li .fas:hover,
+footer ul li .fab:hover
+{
+    color: rgb(255, 43, 74);
+    transition: 0.2s;
+}
+footer p
+{
+    color: rgba(255, 255, 255, 0.5);
+    width: 240px;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+}
